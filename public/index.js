@@ -1,9 +1,7 @@
 let transactions = [];
 let myChart;
-const express = require("express");
-let  = require("/db.js");
 
-express();
+
 
 fetch("/api/transaction")
   .then(response => {
