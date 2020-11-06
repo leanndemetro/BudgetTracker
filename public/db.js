@@ -33,6 +33,7 @@ function checkDatabase() {
   // get all records from store and set to a variable
   const getAll = store.getAll();
   getAll.onsuccess = function() {
+    console.log("indexDB results" + getAll.result);
     if (getAll.result.length > 0) {
       fetch("/api/transaction/bulk", {
         method: "POST",
